@@ -152,7 +152,7 @@ const crearTestimonio=({nombre,como,testimonio})=>{
   const rol=document.createElement("span");
   rol.className="testi-tarjeta__rol";
   rol.textContent=String(como||"Cliente").trim();
-  pie.append(autor,rol);
+  pie.append(autor,document.createTextNode(" "),rol);
   tarjeta.append(estrellas,cita,pie);
   slide.append(tarjeta);
   return slide;
